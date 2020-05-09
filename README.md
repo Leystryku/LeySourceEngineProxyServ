@@ -49,6 +49,6 @@ Please when using this give credit and only use it for good. I'm releasing this 
  
  
 ### Credits
-GeoLite - Stéphane Charette, stephanecharette@gmail.com
-GeoIP2 - https://maxmind.com/
-CURL - https://github.com/curl/curl
+- GeoLite - Stéphane Charette, stephanecharette@gmail.com
+- GeoIP2 - https://maxmind.com/
+- CURL - https://github.com/curl/curl
