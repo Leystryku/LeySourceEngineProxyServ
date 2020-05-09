@@ -15,6 +15,10 @@ copies or substantial portions of the Software.
 The commercial use of this Software or using this to build commercial Software
 is prohibited.
 
+When using this software, distributing it whatsoever always give credit.
+
+Only use this software for good.
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
