@@ -308,8 +308,6 @@ A2SServer::A2SServer(WorkerData *setworker)
 
 	}
 	
-	printf("LOL: %f , %f\n", (float)nodes[6].longitude, (float)nodes[6].latitude);
-	printf("LOL: %f , %f\n", (float)nodes[1].longitude, (float)nodes[1].latitude);
 	printf("Our IP: %lu\n", ournodeip);
 	
 	
