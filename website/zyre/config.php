@@ -3,8 +3,8 @@
 function ConnectMysql()
 {
     $sqlip = "127.0.0.1";
-    $sqluser = "zyre";
-    $sqlpass = "GEJu34\$AWDSFGH";
+    $sqluser = "username";
+    $sqlpass = "password";
     $sqldb = "zyre";
     $sqlport = 3306;
 
