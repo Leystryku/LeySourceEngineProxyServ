@@ -32,18 +32,13 @@
  - libmaxminddb
  - curl
 
- ### Somewhat setup guide
- Step 1.
- Setup a website for coordinating the nodes. Code for the website is in website/ and sql in sql/.
- Step 2.
- Compile leyzyremodule, change the URL to yours and make sure it works for your game. I've used this exclusively for Garry's Mod so certain string references or signatures ("list of opcodes") might not be the same in other games.
+ ### Setup guide
+ - Setup a website for coordinating the nodes. Code for the website is in website/ and sql in sql/.
+ - Compile leyzyremodule, change the URL to yours and make sure it works for your game. I've used this exclusively for Garry's Mod so certain string references or signatures ("list of opcodes") might not be the same in other games.
  Then proceed to use LD_PRELOAD to load the module.
- Step 3.
- Compile leyzyre and leyzyrenodeworker, change the URL to yours and put them both in the same directory.
- Step 4.
- Get yourself the maxmind geoIP database. I recommend using their autoupdater. Put it in the same dir with the correct file name.
- Step 5.
- Execute and enjoy~
+ - Compile leyzyre and leyzyrenodeworker, change the URL to yours and put them both in the same directory.
+ - Get yourself the maxmind geoIP database. I recommend using their autoupdater. Put it in the same dir with the correct file name.
+ - Execute and enjoy~
  
  One thing which might be a little bit confusing is the SQL database. There's not a UI to insert your servers etc. in the DB since this wasn't 
  intended for commercial use. I recommend using a tool like NavCat to connect to your SQL db and insert the data there.
