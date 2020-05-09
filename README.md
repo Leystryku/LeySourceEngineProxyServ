@@ -42,8 +42,13 @@
  
  One thing which might be a little bit confusing is the SQL database. There's not a UI to insert your servers etc. in the DB since this wasn't 
  intended for commercial use. I recommend using a tool like NavCat to connect to your SQL db and insert the data there.
+The software has a autoupdater so if you update stuff it'll automatically get distributed to all your nodes. If you update your module it'll get automatically distributed to all your servers.
 
 ### Side notes
 Please when using this give credit and only use it for good. I'm releasing this to benefit everyone. I've seen in the past that some people use my open source contributions without giving credit or for bad which quite frankly sucks.
  
  
+### Credits
+GeoLite - Stéphane Charette, stephanecharette@gmail.com
+GeoIP2 - https://maxmind.com/
+CURL - https://github.com/curl/curl
