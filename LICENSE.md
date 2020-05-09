@@ -15,7 +15,7 @@ copies or substantial portions of the Software.
 The commercial use of this Software or using this to build commercial Software
 is prohibited.
 
-When using this software, distributing it whatsoever always give credit.
+When using this software, distributing it, building upon it, or something similar - always give credit.
 
 Only use this software for good.
 
