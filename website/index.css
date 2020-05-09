@@ -1,0 +1,13 @@
+body {
+	background-image: url("index.jpg");
+	font-family: 'Press Start 2P', cursive;
+    color: red;
+    text-align: center;
+}
+
+#text {
+	position: absolute;
+	top: 38%;
+	left: 0;
+	right: 0;
+}

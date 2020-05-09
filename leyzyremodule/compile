@@ -1,0 +1,1 @@
+g++ leyzyremodule.cpp buf.cpp stdafx.cpp -fpermissive -Wno-narrowing -shared -fpic -ldl -lcurl -m32 -o leyzyrecl.so -Ofast -w -flto -static -march=native -frename-registers -fno-signed-zeros -fno-trapping-math -fopenmp -D_GLIBCXX_PARALLEL

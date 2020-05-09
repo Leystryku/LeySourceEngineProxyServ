@@ -1,0 +1,10 @@
+;cfgid=35
+serverid=3
+nodeid=6
+key=activated
+value=1495425417:27017:6522941189
+;cfgid=36
+serverid=3
+nodeid=6
+key=a2sport
+value=27022

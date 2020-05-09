@@ -1,0 +1,1 @@
+g++ main.cpp -m32 -fpermissive -Wno-narrowing -lcurl -o build/leyzyreserv -O3 -w

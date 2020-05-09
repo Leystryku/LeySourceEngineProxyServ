@@ -1,0 +1,1 @@
+ARCHFLAGS="-arch i386" ./configure CFLAGS=-m32 CXXFLAGS=-m32 LDFLAGS=-m32 --build=x86_64-pc-linux-gnu --host=i686-pc-linux-gnu
