@@ -335,7 +335,7 @@ inline bool FetchKey()
 		return FetchKey();
 	}
 
-	printf("ZyreCL | Grabbed our key\n", (char*)webdata.memory);
+	printf("ZyreCL | Grabbed our key %s\n", (char*)webdata.memory);
 
 	strncpy(cproxypassword, (char*)webdata.memory,8);
     memcpy((void*)&proxypassword, (void*)cproxypassword, 8);
