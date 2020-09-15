@@ -20,21 +20,26 @@ class database
             if(!$db) die("Database error");
 
             return $db;
-        }
+        
+		}
 
-        $db = new MysqliDb (Array (
-                'host' => $host,
-                'username' => $username, 
-                'password' => $password,
-                'db'=> $dbname,
-                'port' => 3306,
-                'prefix' => 'zyre_',
-                'charset' => 'utf8'));
+		try {
+				$db = new MysqliDb (Array (
+						'host' => $host,
+						'username' => $username, 
+						'password' => $password,
+						'db'=> $dbname,
+						'port' => 3306,
+						'prefix' => 'zyre_',
+						'charset' => 'utf8'));
 
-        if(!$db) die("Database error");
+			if(!$db) die("Database error");
 
-        $this->con = $db;
-        $db->connect();
+			$this->con = $db;
+			$db->connect();
+		} catch(Exception $e) {
+			// stuff
+		}
 
     }
 

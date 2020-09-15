@@ -7,14 +7,15 @@ class ServerData
 
 	private $ournode = [];
 	private $serversforournode = [];
-	private $countriesfornode = [];
+	private $othernodes = [];
 
 	private $nodeid = 0;
 
 	private $fndanything = false;
 
 	private $serverpass = false;
-
+	private $rip = 0;
+	
 	public function HasAccess()
 	{
 		if($this->fndanything)
@@ -28,6 +29,7 @@ class ServerData
 		$db = $GLOBALS["db"];
 
 
+		
 		$db->con->where("ip", ip2long($requesterip));
 
 		$found = 0;
@@ -44,7 +46,9 @@ class ServerData
 		{
 			return;
 		}
-
+		
+		$this->ip = ip2long($requesterip);
+		
 		if($gsport)
 		{
 			$db->con->where("port", $gsport);
@@ -112,9 +116,9 @@ class ServerData
 
 		$nodebit = intval($nodeid) -1;
 
-		$this->countriesfornode = $db->con->rawQuery("SELECT * FROM `zyre_countries` WHERE nodebits & 1<<" . $nodebit . " = 1<<" . $nodebit );
+		$this->othernodes = $db->con->rawQuery("SELECT * FROM `zyre_nodes` WHERE 1=1");
 
-		if(!$this->countriesfornode)
+		if(!$this->othernodes)
 		{
 			$this->fndanything = false;
 			return;
@@ -133,12 +137,16 @@ class ServerData
 		}
 
 		echo("suc: ");
-
-		foreach ($this->countriesfornode as $setting)
+		
+		echo(";");
+		echo("ourip=" . $this->ip . "<br>");
+		
+		foreach ($this->othernodes as $node)
 		{
 
+
 			echo(";");
-			foreach ($setting as $key => $data)
+			foreach ($node as $key => $data)
 			{
 	    		echo($key . "=" . $data . "<br>");
 			}
