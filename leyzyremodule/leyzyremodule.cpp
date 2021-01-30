@@ -988,6 +988,7 @@ ssize_t sendto(int sockfd, const void *buf, size_t len, int flags, const struct 
 		send_port = -1;
 		
 		steady_clock::time_point curtime = steady_clock::now();
+		steady_clock::time_point lastfilewrite = steady_clock::now();
 
 		auto chrono_milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(curtime - lastfilewrite);
 		auto mseconds = chrono_milliseconds.count();
